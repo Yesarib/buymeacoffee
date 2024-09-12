@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.24;
 
+// DEPLOYED 0xc67e7A982A4d97d1eFfab70335B743e91ccB5424
 
 contract BuyMeACoffee{
     event NewMemo(
