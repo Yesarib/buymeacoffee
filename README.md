@@ -1,13 +1,39 @@
-# Sample Hardhat Project
+# Buy Me a Coffee DApp
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+This is a decentralized application (DApp) where users can send donations in the form of cryptocurrency to support the project, similar to the "Buy Me a Coffee" concept.
 
-Try running some of the following tasks:
+## Getting Started
+Follow these instructions to set up and run the project locally.
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
+# Installation
+1. Clone the repository:  
 ```
+git clone https://github.com/Yesarib/buymeacoffee.git
+cd buymeacoffee
+```
+2. Install dependencies:
+```
+npm install
+```
+# Running the Smart Contract
+1. Compile the smart contract:
+  ```
+  npx hardhat compile
+  ```
+2. Deploy the contract to a local network:
+  ```
+  npx hardhat node
+  npx hardhat run scripts/deploy.js --network localhost
+  ```
+# Running the Frontend
+1. Navigate to the frontend folder:
+  ```
+  cd client
+  ```
+2. Start the React app:
+  ```
+  npm run dev
+  ```
+3. Open the app in your browser at http://localhost:5173.
+
+Note: For real deployment make sure to edit your sepolia testnet information in the hardhat.config.js file.
